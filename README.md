@@ -1,0 +1,1 @@
+js_global_useful

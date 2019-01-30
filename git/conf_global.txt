@@ -1,0 +1,10 @@
+# essa configuração cria um gitignore para todos os arquivos e pastas
+# temporarias criadas pela maiorias das IDEA's.
+
+git config --global push.default simple \
+   && git config --global core.editor "vim" \
+   && echo "" >> ~/.gitignore_global \
+   && echo ".vscode" >> ~/.gitignore_global \
+   && echo ".idea" >> ~/.gitignore_global \
+   && echo ".DS_STORE" >> ~/.gitignore_global \
+   && git config --global core.excludesfile ~/.gitignore_global
